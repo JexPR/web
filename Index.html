@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página Web</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Estilo CSS para el contenedor del video */
+    .video-container {
+      margin: 0 auto; /* Centrar el contenedor */
+      margin-right: 10%; /* Ajustar el margen derecho según sea necesario */
+      width: 70%; /* Ancho del contenedor (ajusta según sea necesario) */
+      display: flex; /* Utilizar flexbox para alinear elementos internos */
+    }
+
+    .video-text {
+      flex: 1; /* Hace que el texto ocupe el espacio restante en la fila */
+      padding: 20px; /* Ajustar el espaciado del texto según sea necesario */
+    }
+
+    /* Estilo para alinear texto a la derecha */
+    .texto-derecha {
+      text-align: right;
+    }
+
+    /* Estilo para centrar el texto dentro del footer */
+    .texto-centro {
+      text-align: center;
+    }
+
+    /* Estilo para la animación del encabezado */
+    @keyframes desplazarEntrada {
+      0% {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .animacion-encabezado {
+      animation: desplazarEntrada 1s ease-out;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="animacion-encabezado">Bienvenido a la página de mi canal de YouTube</h1>
+  </header>
+
+  <section>
+    <p>En este lugar encontrarán contenido sobre mi vida en Youtube.</p>
+    <img src="channels4_profile.jpg" alt="Imagen Relacionada" width="500" height="300">
+  </section>
+
+  <div class="video-container">
+    <div class="video-text">
+      <h1>En este apartado le dejaré un video</h1>
+      <!-- Aquí puedes agregar más texto si es necesario -->
+      <footer class="texto-centro">
+        <a href="https://www.youtube.com/channel/UC_XeiTHrg97iymeFCWvE5Sw" class="boton-accion">Youtube</a>
+        <p>En mi vida como Gran Jugador experimentado llevo varios años en este mundo y a su vez he tenido el sueño de ser un jugador profesional para poder ganar dinero mientras hago lo que más me gusta.</p>
+      </footer>
+    </div>
+    <!-- La etiqueta iframe para mostrar un video de YouTube -->
+    <iframe width="600" height="350" src="life is beautiful.mp4" frameborder="0" allowfullscreen></iframe>
+  </div>
+  
+  <footer class="texto-centro">
+    <p>Llevo más de 3 años con mi canal de Twitch; quizás sea poco lo que he conseguido, pero me hace feliz ya que en este canal pasé los mejores momentos de la cuarentena.</p>
+    <a href="https://www.twitch.tv/themosinmanfn" class="boton-accion">Twitch</a>
+  </footer>
+</body>
+</html>

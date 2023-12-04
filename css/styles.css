@@ -1,0 +1,65 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(0, 0, 0);
+  background-image: url('Diseño sin título.jpg'); /* Reemplaza con la ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #f7f4f4;
+  
+    
+  }
+  
+  header, section, footer {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #0a0a0a; /* Color verde para la cafetería o #3498db para la tienda de ropa */
+    color: #f8f8f8;
+  }
+  
+  section {
+    background-color: #000000;
+    background-image: url('Diseño sin título.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+  
+  .boton-accion {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e42626; /* Color naranja para el botón */
+    color: #f3f3f3;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 600px) {
+    /* Estilos adicionales para pantallas pequeñas o dispositivos móviles */
+    section {
+      padding: 10px;
+    }
+  }
+  @keyframes desplazarEntrada {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .animacion-encabezado {
+    animation: desplazarEntrada 5s ease-out;
+  }
+  
